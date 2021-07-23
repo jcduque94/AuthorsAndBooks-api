@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "oPzrNMTSdxnVDO9Dkmh/coET12Z0He8ddPDSieVTIIdpFhpUB7+UIulrLVHxBj7fUw0T9KAK5Jtcb+JYoL7kPA==",
+  "success": true,
+  "projectFilePath": "D:\\Documentos\\PRUEBA TÉCNICA\\BACK\\AuthorsAndBooksTest\\AuthorsAndBooksTest\\AuthorsAndBooksTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Camilo\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.16\\microsoft.aspnetcore.jsonpatch.3.1.16.nupkg.sha512",
+    "C:\\Users\\Camilo\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.16\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.16.nupkg.sha512",
+    "C:\\Users\\Camilo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Camilo\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Camilo\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
