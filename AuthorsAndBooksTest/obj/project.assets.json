@@ -227,11 +227,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documentos\\PRUEBA TÉCNICA\\BACK\\AuthorsAndBooksTest\\AuthorsAndBooksTest\\AuthorsAndBooksTest.csproj",
+      "projectUniqueName": "C:\\Users\\Camilo\\OneDrive\\Documents\\PRUEBA TÉCNICA\\BACK\\AuthorsAndBooksTest\\AuthorsAndBooksTest\\AuthorsAndBooksTest.csproj",
       "projectName": "AuthorsAndBooksTest",
-      "projectPath": "D:\\Documentos\\PRUEBA TÉCNICA\\BACK\\AuthorsAndBooksTest\\AuthorsAndBooksTest\\AuthorsAndBooksTest.csproj",
+      "projectPath": "C:\\Users\\Camilo\\OneDrive\\Documents\\PRUEBA TÉCNICA\\BACK\\AuthorsAndBooksTest\\AuthorsAndBooksTest\\AuthorsAndBooksTest.csproj",
       "packagesPath": "C:\\Users\\Camilo\\.nuget\\packages\\",
-      "outputPath": "D:\\Documentos\\PRUEBA TÉCNICA\\BACK\\AuthorsAndBooksTest\\AuthorsAndBooksTest\\obj\\",
+      "outputPath": "C:\\Users\\Camilo\\OneDrive\\Documents\\PRUEBA TÉCNICA\\BACK\\AuthorsAndBooksTest\\AuthorsAndBooksTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Camilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -283,7 +283,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
