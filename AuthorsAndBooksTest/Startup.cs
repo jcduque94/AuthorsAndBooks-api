@@ -11,6 +11,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Serialization;
+using AuthorsAndBooksTest.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace AuthorsAndBooksTest
 {
@@ -26,6 +28,7 @@ namespace AuthorsAndBooksTest
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+			services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionString")));
 			//Enable CORS
 			services.AddCors(c => {
 				c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());

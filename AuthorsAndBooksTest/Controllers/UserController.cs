@@ -13,7 +13,7 @@ namespace AuthorsAndBooksTest.Controllers
 	/// <summary>
 	/// Authors Controller
 	/// </summary>
-	[Route("[controller]")]
+	[Route("api/[controller]")]
 	[ApiController]
 	public class UserController : Controller
 	{

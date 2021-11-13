@@ -1,5 +1,6 @@
 ﻿using AuthorsAndBooks.BindingModel;
 using AuthorsAndBooksTest.BindingModel;
+using AuthorsAndBooksTest.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -12,25 +13,28 @@ using System.Threading.Tasks;
 namespace AuthorsAndBooksTest.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class BookController : ControllerBase
     {
         private readonly ILogger<BookController> _logger;
+        private readonly AppDbContext context;
 
-        public BookController(ILogger<BookController> logger)
+        public BookController(ILogger<BookController> logger, AppDbContext context)
         {
             _logger = logger;
+            this.context = context;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IEnumerable<Book>> Get()
         {
-            var httpClient = new HttpClient();
-            var json = await httpClient.GetStringAsync("https://fakerestapi.azurewebsites.net/api/v1/Books");
+            //var httpClient = new HttpClient();
+            //var json = await httpClient.GetStringAsync("https://fakerestapi.azurewebsites.net/api/v1/Books");
 
-            var boksList = JsonConvert.DeserializeObject<List<Book>>(json);
+            //var boksList = JsonConvert.DeserializeObject<List<Book>>(json);
 
-            return Ok(boksList);
+            //return Ok(boksList);
+            return (IEnumerable<Book>)context.Book.ToList();
         }
 
         [HttpPost]
