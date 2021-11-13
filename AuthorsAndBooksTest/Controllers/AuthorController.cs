@@ -33,29 +33,7 @@ namespace AuthorsAndBooksTest.Controllers
 
 			var authorsList = JsonConvert.DeserializeObject<List<Author>>(json);
 
-            return Ok(authorsList);
-        }
-
-        [Route("GetBooksByAuthorAndDate")]
-        [HttpGet]
-        public async Task<IActionResult> GetAuthorByFilter(string request)
-        {
-            var httpClient = new HttpClient();
-            var jsonAuthors = await httpClient.GetStringAsync("https://fakerestapi.azurewebsites.net/api/v1/Authors");
-
-			var authorsList = JsonConvert.DeserializeObject<List<Author>>(jsonAuthors);
-
-			var jsonBooks = await httpClient.GetStringAsync("https://fakerestapi.azurewebsites.net/api/v1/Books");
-            
-            var booksList = JsonConvert.DeserializeObject<List<Book>>(jsonBooks);
-
-            var booksByFilters = new BooksByAuthor
-            {
-                Author = authorsList,
-                Book = booksList
-            };
-
-			return Ok(booksByFilters);
+			return Ok(authorsList);
         }
     }
 }

@@ -8,8 +8,9 @@ namespace AuthorsAndBooksTest.BindingModel
 {
 	public class BooksByAuthor
 	{
-		public List<Author> Author { get; set; }
-		public List<Book> Book { get; set; }
+		public DateTime StartDate { get; set; }
+		public DateTime EndDate { get; set; }
+		public string IdBook { get; set; }
 
 	}
 }
