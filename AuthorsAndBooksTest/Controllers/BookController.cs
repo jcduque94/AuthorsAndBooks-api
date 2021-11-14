@@ -1,6 +1,7 @@
-﻿using AuthorsAndBooks.BindingModel;
-using AuthorsAndBooksTest.BindingModel;
+﻿using AuthorsAndBooksTest.BindingModel;
 using AuthorsAndBooksTest.Context;
+using AuthorsAndBooksTest.Entities;
+using AuthorsAndBooksTest.Repository.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -14,19 +15,19 @@ namespace AuthorsAndBooksTest.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class BookController : ControllerBase
+    public class BookController : Controller
     {
         private readonly ILogger<BookController> _logger;
-        private readonly AppDbContext context;
+        private readonly IBookRepository _bookService;
 
-        public BookController(ILogger<BookController> logger, AppDbContext context)
+        public BookController(ILogger<BookController> logger, IBookRepository bookService)
         {
             _logger = logger;
-            this.context = context;
+            _bookService = bookService ?? throw new ArgumentException(nameof(bookService));
         }
 
         [HttpGet]
-        public async Task<IEnumerable<Book>> Get()
+        public IEnumerable<Book> Get()
         {
             //var httpClient = new HttpClient();
             //var json = await httpClient.GetStringAsync("https://fakerestapi.azurewebsites.net/api/v1/Books");
@@ -34,40 +35,32 @@ namespace AuthorsAndBooksTest.Controllers
             //var boksList = JsonConvert.DeserializeObject<List<Book>>(json);
 
             //return Ok(boksList);
-            return (IEnumerable<Book>)context.Book.ToList();
+            return _bookService.Get();
         }
 
-        [HttpPost]
-        public async Task<IActionResult> GetBookById([FromBody] Book request)
-        {
-            var httpClient = new HttpClient();
-            var json = await httpClient.GetStringAsync("https://fakerestapi.azurewebsites.net/api/v1/Books");
-
-            var boksList = JsonConvert.DeserializeObject<List<Book>>(json);
-
-            return Ok(boksList);
-        }
 
         [Route("GetBooksByAuthorAndDate")]
         [HttpPost]
-        public async Task<IActionResult> GetBooksByFilters(BooksByAuthor request)
+        public IEnumerable<Book> GetBooksByFilters(BooksByAuthor request)
         {
-            var httpClient = new HttpClient();
+            //         var httpClient = new HttpClient();
 
-            var jsonBooks = await httpClient.GetStringAsync("https://fakerestapi.azurewebsites.net/api/v1/Books");
+            //         var jsonBooks = await httpClient.GetStringAsync("https://fakerestapi.azurewebsites.net/api/v1/Books");
 
-            var booksList = JsonConvert.DeserializeObject<List<Book>>(jsonBooks);
+            //         var booksList = JsonConvert.DeserializeObject<List<Book>>(jsonBooks);
 
-            if(request.IdBook != null)
-			{
-                var idBook = Int32.Parse(request.IdBook);
-                var booksFilterByAuthor = booksList.Where(b => b.PublishDate >= request.StartDate && b.PublishDate <= request.EndDate && b.Id == idBook);
-                return Ok(booksFilterByAuthor);
-            }
+            //         if(request.IdBook != null)
+            //{
+            //             var idBook = Int32.Parse(request.IdBook);
+            //             var booksFilterByAuthor = booksList.Where(b => b.PublishDate >= request.StartDate && b.PublishDate <= request.EndDate && b.Id == idBook);
+            //             return Ok(booksFilterByAuthor);
+            //         }
 
-            var booksFilter = booksList.Where(b => b.PublishDate >= request.StartDate && b.PublishDate <= request.EndDate);
+            //         var booksFilter = booksList.Where(b => b.PublishDate >= request.StartDate && b.PublishDate <= request.EndDate);
 
-            return Ok(booksFilter);
+            //         return Ok(booksFilter);
+            //     }
+            return _bookService.GetBooksByFilters(request);
         }
     }
 }

@@ -47,6 +47,11 @@ D:\Documentos\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\D
 D:\Documentos\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\AuthorsAndBooksTest.dll
 D:\Documentos\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\AuthorsAndBooksTest.pdb
 D:\Documentos\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\AuthorsAndBooksTest.genruntimeconfig.cache
+C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\AuthorsAndBooksTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\AuthorsAndBooksTest.AssemblyInfoInputs.cache
+C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\AuthorsAndBooksTest.AssemblyInfo.cs
+C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\AuthorsAndBooksTest.csproj.CoreCompileInputs.cache
+C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\AuthorsAndBooksTest.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\bin\Debug\netcoreapp3.1\AuthorsAndBooksTest.exe
@@ -103,11 +108,7 @@ C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\Auth
 C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\AuthorsAndBooksTest.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\AuthorsAndBooksTest.AssemblyInfoInputs.cache
-C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\AuthorsAndBooksTest.AssemblyInfo.cs
-C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\AuthorsAndBooksTest.csproj.CoreCompileInputs.cache
-C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\AuthorsAndBooksTest.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\AuthorsAndBooksTest.csproj.AssemblyReference.cache
 C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\staticwebassets\AuthorsAndBooksTest.StaticWebAssets.Manifest.cache
 C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\staticwebassets\AuthorsAndBooksTest.StaticWebAssets.xml
 C:\Users\Camilo\OneDrive\Documents\PRUEBA TÉCNICA\BACK\AuthorsAndBooksTest\AuthorsAndBooksTest\obj\Debug\netcoreapp3.1\scopedcss\bundle\AuthorsAndBooksTest.styles.css

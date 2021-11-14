@@ -2,6 +2,7 @@
 using AuthorsAndBooksTest.BindingModel;
 using AuthorsAndBooksTest.Context;
 using AuthorsAndBooksTest.Entities;
+using AuthorsAndBooksTest.Repository.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -18,18 +19,19 @@ namespace AuthorsAndBooksTest.Controllers
 	/// </summary>
 	[Route("api/[controller]")]
 	[ApiController]
-	public class AuthorController : ControllerBase
+	public class AuthorController : Controller
 	{
         private readonly ILogger<AuthorController> _logger;
-        private readonly AppDbContext context;
-        public AuthorController(ILogger<AuthorController> logger, AppDbContext context)
+        private readonly IAuthorRepository _authorService;
+        
+        public AuthorController(ILogger<AuthorController> logger, IAuthorRepository authorService)
         {
             _logger = logger;
-            this.context = context;
+            _authorService = authorService ?? throw new ArgumentException(nameof(authorService));
         }
 
         [HttpGet]
-        public async Task<IEnumerable<Author>> Get()
+        public IEnumerable<Author> Get()
         {
             //         var httpClient = new HttpClient();
             //         var json = await httpClient.GetStringAsync("https://fakerestapi.azurewebsites.net/api/v1/Authors");
@@ -37,7 +39,7 @@ namespace AuthorsAndBooksTest.Controllers
             //var authorsList = JsonConvert.DeserializeObject<List<Author>>(json);
 
             //return Ok(authorsList);
-            return context.Author.ToList();
+            return _authorService.Get();
         }
     }
 }
