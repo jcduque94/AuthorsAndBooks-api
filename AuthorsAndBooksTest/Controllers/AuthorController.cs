@@ -1,16 +1,10 @@
 ﻿
-using AuthorsAndBooksTest.BindingModel;
-using AuthorsAndBooksTest.Context;
 using AuthorsAndBooksTest.Entities;
 using AuthorsAndBooksTest.Repository.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
 
 namespace AuthorsAndBooksTest.Controllers
 {
@@ -33,12 +27,6 @@ namespace AuthorsAndBooksTest.Controllers
         [HttpGet]
         public IEnumerable<Author> Get()
         {
-            //         var httpClient = new HttpClient();
-            //         var json = await httpClient.GetStringAsync("https://fakerestapi.azurewebsites.net/api/v1/Authors");
-
-            //var authorsList = JsonConvert.DeserializeObject<List<Author>>(json);
-
-            //return Ok(authorsList);
             return _authorService.Get();
         }
     }
